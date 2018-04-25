@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -8,7 +8,10 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class Page1 {
 
-  constructor(public navCtrl: NavController) {
+  @ViewChild('menuToggleButton')
+  menuToggleButton: HTMLButtonElement;
+
+  constructor() {
 
   }
 
